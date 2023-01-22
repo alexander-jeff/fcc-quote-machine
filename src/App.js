@@ -16,7 +16,8 @@ const App = () => {
   }
 
   const getTweetUrl = () => {
-    const encodedQuote = encodeURIComponent(quote)
+    const tweetString = quote + '\n—' + author
+    const encodedQuote = encodeURIComponent(tweetString)
     const url = `https://twitter.com/intent/tweet?text=${encodedQuote}`
     return url
   }
@@ -34,7 +35,7 @@ const App = () => {
         {/* /<FontAwesomeIcon className="right-quote" icon={faQuoteRight} /> */}
       </div>
       <div id="author">{author || `loading...`}</div>
-      <a id="tweet-quote" href={getTweetUrl()}>
+      <a id="tweet-quote" href={getTweetUrl()} target="_blank" rel="noopener noreferrer">
         Tweet this quote
       </a>
       <button id="new-quote" onClick={getQuote}>New Quote</button>
