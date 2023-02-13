@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90vw;
 }
 
 #text {
@@ -47,6 +48,7 @@
 
 .left-quote, .right-quote {
   font-size: 1.5rem;
+  margin-left: .3rem;
 }
 
 .right-quote {
@@ -56,7 +58,7 @@
 
 #tweet-quote {
   color: #ff0;
-  font-size: 1.5rem;
+  font-size: .8rem;
   font-weight: 600;
   padding: 0;
   cursor: pointer;
@@ -65,7 +67,7 @@
 button {
   background-color: #ff0;
   color: #ff69b4;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 3px;
